@@ -68,7 +68,6 @@ const Home = () => {
     try {
       setLoading(true);
 
-      // Combine date and time into a single Date object without timezone issues
       const [hours, minutes] = data.btime.split(":").map(Number);
       const selectedDate = new Date(data.bdate);
       selectedDate.setHours(hours, minutes, 0, 0);
