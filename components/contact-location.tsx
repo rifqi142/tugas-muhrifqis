@@ -19,7 +19,7 @@ const ContactLocation = () => {
           </h2>
           <p className="regular-14 mt-2 xl:mt-10 text-justify">
             Our salon is the territory created purely for people who appreciate
-            premium quality, time and flawless look. We'll help you to look
+            premium quality, time and flawless look. We&apos;ll help you to look
             stylish and confident in the most discreet way.
           </p>
         </div>
