@@ -27,7 +27,7 @@ const Footer = () => {
           ))}
         </div>
         <p className="regular-12 xl:regular-16 text-muted-foreground">
-          Copyright &copy; 2021 Sea Salon.
+          Copyright &copy; 2024 Sea Salon.
         </p>
       </div>
     </section>

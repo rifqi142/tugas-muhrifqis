@@ -48,18 +48,20 @@ const ListReview: React.FC<ListReviewProps> = ({
 
   return (
     <Card className="w-[300px]">
-      <CardContent className="mt-5 flex justify-between gap-5">
+      <CardContent className="mt-5 flex gap-5">
         <div className="flex flex-col items-center justify-center">
           <Avatar>
             <AvatarImage src="" alt={cname} />
             <AvatarFallback>{initials}</AvatarFallback>
           </Avatar>
-          <h2 className="bold-16 mt-2">{cname}</h2>
+          <div className="flex mt-3">{renderStars(crating)}</div>
         </div>
 
         <div>
-          <div className="flex mt-3">{renderStars(crating)}</div>
-          <p className="regular-14 text-muted-foreground mt-3">{ccomment}</p>
+          <h2 className="bold-16 mt-2">{cname}</h2>
+          <p className="regular-14 text-muted-foreground mt-1 xl:mt-3">
+            {ccomment}
+          </p>
         </div>
       </CardContent>
     </Card>

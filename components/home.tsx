@@ -251,7 +251,7 @@ const Home = () => {
                   )}
                 />
 
-                <DialogFooter className="mt-10">
+                <DialogFooter className="mt-10 gap-3 xl:gap-0">
                   <DialogClose asChild>
                     <Button
                       variant="destructive"

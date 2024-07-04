@@ -102,7 +102,7 @@ const Review = () => {
           <Separator className="bg-yellow-90 mt-2" />
         </div>
       </div>
-      <div className="px-10 mt-10 flex justify-end">
+      <div className="px-10 mt-5 xl:mt-10 flex justify-end">
         <Dialog>
           <DialogTrigger asChild>
             <Button>Leave a review</Button>
@@ -111,7 +111,7 @@ const Review = () => {
             <DialogHeader>
               <DialogTitle>Leave a review</DialogTitle>
               <DialogDescription>
-                Share your experience with us
+                Share your experience with us to improve our services
               </DialogDescription>
             </DialogHeader>
             <Form {...form}>
@@ -172,7 +172,7 @@ const Review = () => {
                     </FormItem>
                   )}
                 />
-                <DialogFooter className="mt-5">
+                <DialogFooter className="mt-5 gap-3 xl:gap-0">
                   <DialogClose asChild>
                     <Button
                       variant="destructive"

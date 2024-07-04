@@ -10,7 +10,7 @@ const ContactLocation = () => {
         <h3 className="text-xl xl:text-4xl text-yellow-90">Find us here</h3>
       </div>
 
-      <div className="flex flex-col lg:flex-row mt-14 px-10 xl:px-20 gap-3">
+      <div className="flex flex-col lg:flex-row mt-5 xl:mt-14 px-10 xl:px-20 gap-3">
         <div className="text-white flex-1">
           <h2 className="text-2xl xl:text-4xl font-bold uppercase">
             Service Beyond
