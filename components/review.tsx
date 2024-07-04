@@ -195,7 +195,7 @@ const Review = () => {
       {/* LIST REVIEW */}
       <div className="flex flex-row gap-3 flex-wrap justify-center py-10">
         {reviews.length === 0 ? (
-          <h2 className="text-3xl">
+          <h2 className="text-xl xl:text-3xl">
             No Reviews yet. Please leave a review to improve our services
           </h2>
         ) : (

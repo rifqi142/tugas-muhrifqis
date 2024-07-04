@@ -147,6 +147,10 @@ html {
     @apply text-[32px] font-[700] leading-[120%];
   }
 
+  .bold-26 {
+    @apply text-[26px] font-[700];
+  }
+
   .bold-20 {
     @apply text-[20px] font-[700];
   }
@@ -157,5 +161,9 @@ html {
 
   .bold-16 {
     @apply text-[16px] font-[700];
+  }
+
+  .auth-form {
+    @apply flex min-h-screen w-full max-w-[420px] flex-col justify-center gap-5 py-10 md:gap-8;
   }
 }

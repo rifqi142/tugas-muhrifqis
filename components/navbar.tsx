@@ -12,7 +12,11 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full flex items-center justify-between px-6 lg:px-10 3xl:px-0 py-5 bg-white z-30">
-      <Link href="/" className="flex flex-row items-center">
+      <Link
+        href="/"
+        className="flex flex-row items-center"
+        onClick={() => setIsMenuOpen(false)}
+      >
         <Image src="/assets/logo-salon.png" alt="logo" width={30} height={20} />
         <span className="font-bold text-base xl:text-2xl ml-2 text-blue-30">
           Sea Salon
@@ -42,28 +46,38 @@ const Navbar = () => {
       </ul>
 
       <div className="hidden lg:flex flex-row gap-2 xl:gap-4">
-        <Button size="sm" variant="outline">
-          <Users size={16} className="mr-2 h-4 w-4" />
-          Register
-        </Button>
-        <Button size="sm" className="bg-blue-40">
-          <LogIn size={16} className="mr-2 h-4 w-4" />
-          Login
-        </Button>
+        <Link href="/register" passHref onClick={() => setIsMenuOpen(false)}>
+          <Button size="sm" variant="outline">
+            <Users size={16} className="mr-2 h-4 w-4" />
+            Register
+          </Button>
+        </Link>
+
+        <Link href="/login" passHref onClick={() => setIsMenuOpen(false)}>
+          <Button size="sm" className="bg-blue-40">
+            <LogIn size={16} className="mr-2 h-4 w-4" />
+            Login
+          </Button>
+        </Link>
       </div>
 
       {/* Navigation Links for mobile */}
       {isMenuOpen && (
         <ul className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 z-20">
           <div className="flex flex-row gap-2 xl:gap-4">
-            <Button size="sm" variant="outline">
-              <Users size={16} className="mr-2 h-4 w-4" />
-              Register
-            </Button>
-            <Button size="sm" className="bg-blue-40">
-              <LogIn size={16} className="mr-2 h-4 w-4" />
-              Login
-            </Button>
+            <Link href="/register" passHref>
+              <Button size="sm" variant="outline">
+                <Users size={16} className="mr-2 h-4 w-4" />
+                Register
+              </Button>
+            </Link>
+
+            <Link href="/login" passHref>
+              <Button size="sm" className="bg-blue-40">
+                <LogIn size={16} className="mr-2 h-4 w-4" />
+                Login
+              </Button>
+            </Link>
           </div>
           {NAV_LINKS.map((nav) => (
             <Link

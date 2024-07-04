@@ -32,7 +32,7 @@ import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import { Calendar } from "./ui/calendar";
-import { cn } from "@/lib/utils";
+import { cn } from "@/libs/utils";
 
 const formSchema = z.object({
   bname: z
